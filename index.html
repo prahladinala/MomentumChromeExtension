@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo + New Tab</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <img
+      src="https://source.unsplash.com/random"
+      id="image"
+      alt="Please check your internet connection !!!"
+    />
+    <div class="text-container">
+      <div class="text-wrapper">
+        <h1>Tasks for the day !!!</h1>
+        <p class="lead">Here are the tasks you have to do today</p>
+        <div class="container">
+          <div class="input-group mb-3" id="task-form">
+            <input
+              type="text"
+              id="task"
+              class="form-control"
+              placeholder="Name your Task"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-outline-secondary"
+                type="submit"
+                id="button-addon2"
+              >
+                Add Task
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="list-group list-group-flush collection">
+            <li class="list-group-item">Cras justo odio</li>
+          </ul>
+        </div>
+        <br />
+        <div class="container">
+          <button class="btn btn-block btn-danger clear-tasks">
+            Clear all Tasks
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
